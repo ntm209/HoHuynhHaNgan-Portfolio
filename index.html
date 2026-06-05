@@ -901,6 +901,12 @@
       gap: 20px;
       margin-top: 30px;
     }
+    .tool-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
     .tool-box {
       background: rgba(7, 20, 18, 0.4);
       border: 1px solid rgba(232, 241, 238, 0.05);
@@ -1213,7 +1219,7 @@
       .skills-grid { grid-template-columns: 1fr; gap: 20px; }
       .docs-grid { grid-template-columns: 1fr; gap: 20px; }
       .flowchart-wrapper { grid-template-columns: 1fr; gap: 20px; }
-      .tool-grid { grid-template-columns: 1fr; gap: 16px; }
+      .tool-grid, .tool-grid-4 { grid-template-columns: 1fr; gap: 16px; }
       .principles-grid { grid-template-columns: 1fr; gap: 20px; }
       .infographic-columns { grid-template-columns: 1fr; gap: 30px; }
       .infographic-columns::after { display: none; }
@@ -1425,7 +1431,7 @@
           <span>Basic OS</span>
         </div>
         <div class="doc-card-footer">
-          <span class="doc-card-size">144.1 MB</span>
+          <span class="doc-card-size">7.7 MB</span>
           <span class="doc-card-link">Tải về <span class="arrow">→</span></span>
         </div>
       </a>
@@ -1447,12 +1453,46 @@
         </div>
       </a>
 
-      <!-- Doc 5 -->
-      <a href="./bài tập 5.docx" class="doc-card reveal" download>
+      <!-- Doc 3 -->
+      <a href="./bài tập 3.docx" class="doc-card reveal" download>
         <div class="doc-card-num">03</div>
         <div class="doc-card-badge"><span class="badge-dot"></span>DOCX</div>
+        <h3 class="doc-card-title">Bài tập 3: Kỹ thuật Prompt Engineering hiệu quả</h3>
+        <p class="doc-card-desc">Xây dựng và so sánh các cấp độ prompt (Cơ bản, Chi tiết, Nâng cao) áp dụng vào việc tóm tắt, giải thích khái niệm học thuật và phản hồi Q&amp;A.</p>
+        <div class="doc-card-tags">
+          <span>Prompt Design</span>
+          <span>Role Prompting</span>
+          <span>LLMs Learning</span>
+        </div>
+        <div class="doc-card-footer">
+          <span class="doc-card-size">3.3 MB</span>
+          <span class="doc-card-link">Tải về <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+      <!-- Doc 4 -->
+      <a href="./bài tập 4.docx" class="doc-card reveal" download>
+        <div class="doc-card-num">04</div>
+        <div class="doc-card-badge"><span class="badge-dot"></span>DOCX</div>
+        <h3 class="doc-card-title">Bài tập 4: Nhật ký minh chứng cộng tác nhóm</h3>
+        <p class="doc-card-desc">Thiết lập và vận hành các công cụ Trello, Google Docs, Drive và MS Teams để lập kế hoạch, phân công việc và theo dõi phiên bản đóng góp nhóm.</p>
+        <div class="doc-card-tags">
+          <span>Project Board</span>
+          <span>Group Collab</span>
+          <span>Online Tools</span>
+        </div>
+        <div class="doc-card-footer">
+          <span class="doc-card-size">1.0 MB</span>
+          <span class="doc-card-link">Tải về <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+      <!-- Doc 5 -->
+      <a href="./bài tập 5.docx" class="doc-card reveal" download>
+        <div class="doc-card-num">05</div>
+        <div class="doc-card-badge"><span class="badge-dot"></span>DOCX</div>
         <h3 class="doc-card-title">Bài tập 5: Sáng tạo nội dung cùng AI</h3>
-        <p class="doc-card-desc">Bảng đánh giá sâu sắc về Gemini, Midjourney và Canva AI, phân tích chi tiết sự chuyển dịch vai trò sáng tạo và 3 bài toán đạo đức lớn.</p>
+        <p class="doc-card-desc">Bảng đánh giá sâu sắc về Gemini, Midjourney và Canva AI, phân tích chi tiết sự dịch chuyển vai trò sáng tạo và 3 bài toán đạo đức lớn.</p>
         <div class="doc-card-tags">
           <span>AI Assessment</span>
           <span>Workflow Shift</span>
@@ -1643,6 +1683,209 @@
               <div class="flow-step">
                 <span class="num">4</span>
                 <div>Đóng gói sản phẩm qua các layout lưới thông minh gợi ý</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study 3 -->
+      <div class="case-study-card reveal">
+        <span class="label">Kỹ thuật Số (Bài tập 3)</span>
+        <h3>Viết Prompt hiệu quả: <em>Tối ưu hóa các tác vụ học tập</em></h3>
+        <p class="case-study-intro">
+          Xây dựng các prompt chuyên biệt cho 3 tác vụ học tập cốt lõi: Tóm tắt văn bản, Giải thích khái niệm và Hỏi đáp kiến thức. Nghiên cứu tập trung vào sự khác biệt kết quả giữa Prompt cơ bản (không rõ vai trò/yêu cầu) và Prompt nâng cao (áp dụng kỹ thuật định hướng vai trò và phân rã cấu trúc đầu ra).
+        </p>
+
+        <h4>So sánh hiệu quả của các cấp độ Prompt trong thực nghiệm:</h4>
+        <div class="tool-grid">
+          <div class="tool-box">
+            <h5>Prompt Cơ bản</h5>
+            <ul>
+              <li><strong>Cú pháp mẫu:</strong> "Giải thích định luật bảo toàn năng lượng."</li>
+              <li><strong>Đặc điểm:</strong> Hỏi chung chung, thiếu ngữ cảnh, không giới hạn phạm vi người đọc.</li>
+              <li><strong>Độ dài đầu ra:</strong> Ngắn, thiếu ví dụ minh họa cụ thể.</li>
+              <li><strong>Kết quả:</strong> Độ chính xác trung bình, văn phong hàn lâm thô sơ, tính thực tiễn thấp.</li>
+            </ul>
+          </div>
+          <div class="tool-box">
+            <h5>Prompt Chi tiết</h5>
+            <ul>
+              <li><strong>Cú pháp mẫu:</strong> "Giải thích định luật bảo toàn năng lượng trong vật lý, dành cho sinh viên năm nhất."</li>
+              <li><strong>Đặc điểm:</strong> Xác định rõ đối tượng tiếp nhận kiến thức và phạm vi khoa học.</li>
+              <li><strong>Độ dài đầu ra:</strong> Vừa phải, tập trung sâu hơn vào yêu cầu cốt lõi.</li>
+              <li><strong>Kết quả:</strong> Tốt, dễ hiểu hơn đối với đối tượng sinh viên năm đầu.</li>
+            </ul>
+          </div>
+          <div class="tool-box">
+            <h5>Prompt Nâng cao (Role-Prompting)</h5>
+            <ul>
+              <li><strong>Cú pháp mẫu:</strong> "Bạn là giảng viên vật lý. Hãy giải thích định luật bảo toàn năng lượng bằng ví dụ thực tế về con lắc đơn và ứng dụng..."</li>
+              <li><strong>Đặc điểm:</strong> Thiết lập vai trò chuyên gia, định hướng cấu trúc nội dung, yêu cầu ví dụ thực tế.</li>
+              <li><strong>Độ dài đầu ra:</strong> Dài và chi tiết, chia mục rõ ràng.</li>
+              <li><strong>Kết quả:</strong> Rất tốt, tính ứng dụng cao, lập luận chặt chẽ và sáng tạo.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h4 style="margin-top: 40px;">Bảng tổng hợp đánh giá chất lượng kết quả từ Chat GPT:</h4>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Tác vụ học tập</th>
+                <th>Phiên bản Prompt</th>
+                <th>Độ dài đầu ra</th>
+                <th>Mức độ chính xác</th>
+                <th>Tính logic</th>
+                <th>Tính sáng tạo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="3"><strong>Tóm tắt tài liệu</strong></td>
+                <td>Cơ bản ("Tóm tắt...")</td>
+                <td>Ngắn</td>
+                <td>Trung bình</td>
+                <td>Thấp</td>
+                <td>Thấp</td>
+              </tr>
+              <tr>
+                <td>Chi tiết ("Tóm tắt ý chính...")</td>
+                <td>Vừa</td>
+                <td>Tốt</td>
+                <td>Tốt</td>
+                <td>Trung bình</td>
+              </tr>
+              <tr>
+                <td><strong style="color: var(--accent-gold);">Nâng cao (Trợ lý học thuật)</strong></td>
+                <td>Dài (Đầy đủ cấu trúc)</td>
+                <td>Rất tốt</td>
+                <td>Rất tốt</td>
+                <td>Cao</td>
+              </tr>
+              <tr>
+                <td rowspan="3"><strong>Giải thích khái niệm</strong></td>
+                <td>Cơ bản ("Định luật bảo toàn...")</td>
+                <td>Ngắn</td>
+                <td>Trung bình</td>
+                <td>Thấp</td>
+                <td>Thấp</td>
+              </tr>
+              <tr>
+                <td>Chi tiết ("Giải thích cho SV...")</td>
+                <td>Vừa</td>
+                <td>Tốt</td>
+                <td>Tốt</td>
+                <td>Trung bình</td>
+              </tr>
+              <tr>
+                <td><strong style="color: var(--accent-gold);">Nâng cao (Giảng viên vật lý)</strong></td>
+                <td>Dài (Có ví dụ &amp; ứng dụng)</td>
+                <td>Rất tốt</td>
+                <td>Rất tốt</td>
+                <td>Cao</td>
+              </tr>
+              <tr>
+                <td rowspan="3"><strong>Hỏi đáp kiến thức</strong></td>
+                <td>Cơ bản ("Tình cảm gia đình...")</td>
+                <td>Ngắn</td>
+                <td>Trung bình</td>
+                <td>Thấp</td>
+                <td>Thấp</td>
+              </tr>
+              <tr>
+                <td>Chi tiết ("Giải thích ý nghĩa...")</td>
+                <td>Vừa</td>
+                <td>Tốt</td>
+                <td>Tốt</td>
+                <td>Trung bình</td>
+              </tr>
+              <tr>
+                <td><strong style="color: var(--accent-gold);">Nâng cao (Nhà tâm lý học)</strong></td>
+                <td>Dài (Phân tích đa chiều)</td>
+                <td>Rất tốt</td>
+                <td>Rất tốt</td>
+                <td>Cao</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Case Study 4 -->
+      <div class="case-study-card reveal">
+        <span class="label">Cộng tác số (Bài tập 4)</span>
+        <h3>Cộng tác trực tuyến: <em>Nhật ký minh chứng &amp; Năng lực làm việc nhóm</em></h3>
+        <p class="case-study-intro">
+          Nhật ký ghi chép thực tế quá trình ứng dụng hệ sinh thái công nghệ trực tuyến để điều phối, cộng tác và quản lý tiến độ trong một tuần làm việc nhóm. Nghiên cứu thể hiện khả năng làm việc đồng bộ và giải quyết các bài toán giao tiếp trong dự án học phần.
+        </p>
+
+        <h4>Hệ thống 4 công cụ cộng tác trực tuyến đã áp dụng:</h4>
+        <div class="tool-grid-4">
+          <div class="tool-box">
+            <h5 style="display: flex; align-items: center; gap: 8px;">📊 Trello</h5>
+            <p style="font-size: 12px; color: var(--text-muted); line-height: 1.6; margin-top: 8px;">
+              <strong>Mục đích:</strong> Quản lý tiến độ công việc cá nhân.<br/>
+              <strong>Thực hiện:</strong> Thiết lập bảng Kanban cá nhân, tự chia nhỏ đầu việc (đề cương, slide, tổng hợp báo cáo), đặt deadline và liên tục cập nhật trạng thái thẻ.
+            </p>
+          </div>
+          <div class="tool-box">
+            <h5 style="display: flex; align-items: center; gap: 8px;">📝 Google Docs</h5>
+            <p style="font-size: 12px; color: var(--text-muted); line-height: 1.6; margin-top: 8px;">
+              <strong>Mục đích:</strong> Biên soạn tài liệu cộng tác đồng thời.<br/>
+              <strong>Thực hiện:</strong> Trực tiếp soạn thảo và biên tập các nội dung báo cáo cùng nhóm, sử dụng công cụ "Version History" để lưu vết và chứng minh phần đóng góp cá nhân.
+            </p>
+          </div>
+          <div class="tool-box">
+            <h5 style="display: flex; align-items: center; gap: 8px;">💾 Google Drive</h5>
+            <p style="font-size: 12px; color: var(--text-muted); line-height: 1.6; margin-top: 8px;">
+              <strong>Mục đích:</strong> Lưu trữ &amp; phân loại dữ liệu khoa học.<br/>
+              <strong>Thực hiện:</strong> Xây dựng cây thư mục cá nhân nằm trong thư mục chung của nhóm, phân loại tệp tin theo cấu trúc logic và quy chuẩn đặt tên file chặt chẽ.
+            </p>
+          </div>
+          <div class="tool-box">
+            <h5 style="display: flex; align-items: center; gap: 8px;">💬 MS Teams</h5>
+            <p style="font-size: 12px; color: var(--text-muted); line-height: 1.6; margin-top: 8px;">
+              <strong>Mục đích:</strong> Giao tiếp và trao đổi thông tin nhóm.<br/>
+              <strong>Thực hiện:</strong> Chủ động tham gia họp nhanh đầu giờ (Standup), thảo luận giải pháp khắc phục khi trôi tin nhắn hoặc xung đột tài liệu, gắn thẻ (tag) thành viên phản hồi.
+            </p>
+          </div>
+        </div>
+
+        <h4 style="margin-top: 40px;">Đánh giá trải nghiệm và Năng lực điều phối cá nhân:</h4>
+        <div class="flowchart-wrapper">
+          <div class="flow-col">
+            <h4>Khó khăn &amp; Rào cản gặp phải</h4>
+            <div class="flow-steps">
+              <div class="flow-step">
+                <span class="num">✖</span>
+                <div><strong>Trôi thông tin:</strong> Tần suất nhắn tin thảo luận lớn trên Teams dễ làm trôi mất các kết luận quan trọng hoặc đầu việc được giao.</div>
+              </div>
+              <div class="flow-step">
+                <span class="num">✖</span>
+                <div><strong>Xung đột phiên bản:</strong> Nhiều thành viên cùng sửa tài liệu cùng lúc đôi khi gây ra hiện tượng ghi đè nội dung của nhau.</div>
+              </div>
+              <div class="flow-step">
+                <span class="num">✖</span>
+                <div><strong>Quản lý thời gian:</strong> Khó kiểm soát tiến độ chung nếu các thành viên không cập nhật trạng thái công việc kịp thời.</div>
+              </div>
+            </div>
+          </div>
+          <div class="flow-col new-flow">
+            <h4>Giải pháp khắc phục &amp; Kết quả</h4>
+            <div class="flow-steps">
+              <div class="flow-step">
+                <span class="num">✔</span>
+                <div><strong>Ghim kết luận &amp; Tag tên:</strong> Sử dụng tính năng Pin tin nhắn quan trọng và Tag tên trực tiếp người phụ trách để tăng tính trách nhiệm.</div>
+              </div>
+              <div class="flow-step">
+                <span class="num">✔</span>
+                <div><strong>Sử dụng Version History:</strong> Tận dụng lịch sử chỉnh sửa để khôi phục hoặc đối chiếu khi có xung đột dữ liệu trên Google Docs.</div>
+              </div>
+              <div class="flow-step">
+                <span class="num">✔</span>
+                <div><strong>Tự động hóa thẻ Trello:</strong> Thiết lập thông báo nhắc nhở tự động trước khi hết hạn thẻ việc 24h để đảm bảo đúng tiến độ.</div>
               </div>
             </div>
           </div>
